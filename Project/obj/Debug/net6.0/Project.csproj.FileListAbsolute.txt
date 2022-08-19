@@ -1,0 +1,15 @@
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/obj/Debug/net6.0/Project.csproj.AssemblyReference.cache
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/obj/Debug/net6.0/Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/obj/Debug/net6.0/Project.AssemblyInfoInputs.cache
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/obj/Debug/net6.0/Project.AssemblyInfo.cs
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/obj/Debug/net6.0/Project.csproj.CoreCompileInputs.cache
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/bin/Debug/net6.0/Project
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/bin/Debug/net6.0/Project.deps.json
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/bin/Debug/net6.0/Project.runtimeconfig.json
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/bin/Debug/net6.0/Project.dll
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/bin/Debug/net6.0/Project.pdb
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/obj/Debug/net6.0/Project.dll
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/obj/Debug/net6.0/refint/Project.dll
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/obj/Debug/net6.0/Project.pdb
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/obj/Debug/net6.0/Project.genruntimeconfig.cache
+/Users/vadimbayramov/Desktop/HW_Seminar8_C#/Project/obj/Debug/net6.0/ref/Project.dll
