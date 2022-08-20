@@ -54,8 +54,81 @@
             }
         }
 
+        void Zadacha58()
+        {
+            //Заполните спирально массив 4 на 4 числами от 1 до 16.
+
+            Random random = new Random();
+            int rows = random.Next(4, 5);
+            int columns = random.Next(4, 5);
+            int[,] array = new int[rows, columns];
+
+            rows = array.GetLength(0);
+            columns = array.GetLength(1);
+            int s = 1;
+            for (int j = 0; j < columns; j++)
+            {
+              array[0, j] = s;
+              s++;
+            }
+            for (int i = 1; i < rows; i++)
+            {
+               array[i, columns-1] = s;
+               s++;
+            }
+            for (int j = columns - 2; j > -1; j--)
+            {
+                array[rows-1, j] = s;
+                s++;
+            }
+            for (int i = rows-2; i > 0; i--)
+            {
+                array[i, 0] = s;
+                s++;
+            }
+
+            int k = 1;
+            int l = 1;
+
+            while (s < rows*columns)
+            {
+                while (array[k, l+1]  == 0)
+                {
+                    array[k,l] = s;
+                    s++;
+                    l++;
+                }
+                while (array[k+1, l] == 0)
+                {
+                    array[k,l] = s;
+                    s++;
+                    k++;
+                }
+                while (array[k, l-1] == 0)
+                {
+                    array[k,l] = s;
+                    s++;
+                    l--;
+                }
+            }
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    if (array[i,j] == 0)
+                    {
+                        array[i,j] = s;
+                    }
+                }
+            }
+            
+            PrintArray(array);
+        }
+
         //Zadacha54();
-        Zadacha56();
+        //Zadacha56();
+        Zadacha58();
     }
     static void FillArray(int[,] array, int startNum = 0, int finishNum = 10)
     {
@@ -72,7 +145,6 @@
             }
         }
     }
-
     static void PrintArray(int[,] array)
     {
         int rows = array.GetLength(0);
@@ -87,7 +159,6 @@
             Console.WriteLine();
         }
     }
-
         static void PrintArray(int[] result)
     {
         int size = result.Length;
