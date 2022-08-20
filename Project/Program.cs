@@ -29,31 +29,29 @@
             int[,] array = new int[rows, columns];
             FillArray(array, 0, 9);
             PrintArray(array);
-            Console.WriteLine();
 
-          
-            
+            int[] result = new int[rows];
             for (int i = 0; i < rows; i++)
             {
                 int sumRow = 0;
-                int nextRow = 0;
-                int MinRow = i; 
-
                 for (int j = 0; j < columns; j++)
                 {
                     sumRow += array[i, j];
-                    Console.WriteLine($"sumRow {sumRow}");
-                    nextRow += array[i+1, j];
-                    Console.WriteLine($"nextRow {nextRow}");
                 }
-
-            if (sumRow > nextRow)
+                result[i] = sumRow;
+            }
+            
+            int min = 0;
+            for (int k = 0; k < result.Length; k++)
             {
-                MinRow = i+1;
+                if (result[min] > result[k+1])
+                {
+                    min = k+1;
+                    Console.WriteLine();
+                    Console.WriteLine($"{min+1} строка имеет минимальную сумму элементов");
+                    Console.WriteLine();
+                }
             }
-            Console.WriteLine(MinRow);
-            }
-
         }
 
         //Zadacha54();
@@ -87,6 +85,16 @@
                 Console.Write(array[i, j] + "\t");
             }
             Console.WriteLine();
+        }
+    }
+
+        static void PrintArray(int[] result)
+    {
+        int size = result.Length;
+
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write(result[i] + "\t");
         }
     }
 
